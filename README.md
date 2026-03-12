@@ -1,7 +1,7 @@
 # <p align="center">NecrOS G4 — "The Tactical Titanium" 💀🍎</p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WaD45/NecrOS/main/necroslogo2.png" width="400" alt="NecrOS G4 Logo">
+  <img src="https://raw.githubusercontent.com/WaD45/NecrOS/main/necrospowerbookg4.png" width="400" alt="NecrOS G4 Logo">
 </p>
 
 ---
