@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NecrOS G4 — The Tactical Titanium</title>
+    <style>
+        :root {
+            --aluminum: #c2c2c2;
+            --dark-aluminum: #2c2c2c;
+            --phosphor-green: #00ff41;
+            --aqua-blue: #007aff;
+            --bg-black: #050505;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-black);
+            color: white;
+            overflow-x: hidden;
+            background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #050505 100%);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 80px;
+            font-weight: 700;
+            background: linear-gradient(180deg, var(--aluminum) 0%, #444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: var(--aluminum);
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .cta {
+            padding: 15px 40px;
+            background-color: var(--aqua-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(0, 122, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0, 122, 255, 0.5);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            background: #111;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #333;
+        }
+
+        .feature h3 {
+            color: var(--phosphor-green);
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        .terminal {
+            background-color: #0a0a0a;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 15px solid #333;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--phosphor-green);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: var(--phosphor-green);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .apple-logo {
+            font-size: 40px;
+            margin-bottom: 20px;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NecrOS G4.</div>
+        <div class="subtitle">Thinner. Faster. Deadlier.</div>
+        <a href="#install" class="cta">Get Tactical</a>
+    </header>
+
+    <section>
+        <h2>Revolutionary PowerPC Performance.</h2>
+        <p style="font-size: 20px; line-height: 1.6; text-align: center; color: #888;">
+            We've taken the world's most iconic laptop and given it a second life. One with a tactical edge. NecrOS G4 is designed to extract every ounce of performance from your G4 silicon.
+        </p>
+    </section>
+
+    <section id="install">
+        <div class="terminal">
+            <p>> initializing tactical_bootstrap.sh...</p>
+            <p>> architecture detected: PowerPC G4 (Big Endian)</p>
+            <p>> loading necrOS_kernel_patch... [OK]</p>
+            <p>> ready for deployment.</p>
+            <p># wget -qO- install.necros.g4 | sh<span class="cursor"></span></p>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="feature">
+            <h3>Titanium Strength</h3>
+            <p>Engineered for the PowerBook G4 architecture. Resilient, hardened, and silent.</p>
+        </div>
+        <div class="feature">
+            <h3>Tactical Terminal</h3>
+            <p>The "Aqua-Tactical" UI blends mid-2000s elegance with modern battlefield readouts.</p>
+        </div>
+        <div class="feature">
+            <h3>Endian Optimized</h3>
+            <p>Every tool rebuilt for the RISC PowerPC architecture. Maximum efficiency.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="apple-logo"></div>
+        <p>Designed in the Abyss. Assembled on your G4.</p>
+        <p>&copy; 2026 NecrOS Research Labs. No rights reserved.</p>
+    </footer>
+
+</body>
+</html>
